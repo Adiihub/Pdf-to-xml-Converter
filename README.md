@@ -147,7 +147,7 @@ Before you begin, ensure you have the following:
 | `/api/conversions` | GET | Get a list of the user's conversions | Yes |
 | `/api/conversions/:id` | GET | Get a specific conversion | Yes |
 | `/api/conversions/:id` | DELETE | Delete a specific conversion | Yes |
-
+<!-- 
 ## 🔄 Storage Management
 
 The application includes a sophisticated storage management system that:
@@ -156,7 +156,7 @@ The application includes a sophisticated storage management system that:
 2. Gracefully falls back to in-memory storage when MongoDB is unavailable
 3. Periodically checks MongoDB connection status and switches storage implementations as needed
 4. Migrates data from in-memory to MongoDB when connection is established
- 
+  -->
 
 ### Core Functionality
 
@@ -177,7 +177,7 @@ The application includes a sophisticated storage management system that:
    - Interface-based design with multiple implementations
    - Seamless switching between storage providers
    - Automatic failover and recovery
-
+<!-- 
 ### User Interface
 
 1. **Conversion Interface**
@@ -191,7 +191,7 @@ The application includes a sophisticated storage management system that:
    - Detailed conversion metadata display
    - Paginated results for improved performance
    - Quick access to past conversions
- 
+  -->
 ### Search Filters
 - **Text Search**: Find conversions by filename or content
 - **Date Range**: Filter conversions by conversion date (from/to)
