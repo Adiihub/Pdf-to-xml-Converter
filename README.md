@@ -153,7 +153,7 @@ The application includes a sophisticated storage management system that:
 4. Migrates data from in-memory to MongoDB when connection is established
   -->
 
-### Core Functionality
+<!-- ### Core Functionality
 
 1. **PDF Conversion Engine**
    - Located in `server/routes.ts`
@@ -171,7 +171,7 @@ The application includes a sophisticated storage management system that:
    - Located in `server/storage.ts` and `server/storage-manager.ts`
    - Interface-based design with multiple implementations
    - Seamless switching between storage providers
-   - Automatic failover and recovery
+   - Automatic failover and recovery -->
 <!-- 
 ### User Interface
 
@@ -191,11 +191,11 @@ The application includes a sophisticated storage management system that:
 - **Text Search**: Find conversions by filename or content
 - **Date Range**: Filter conversions by conversion date (from/to)
 - **File Size**: Filter by file size range (min/max) --> -->
-
+<!-- 
 ### Sorting Options
 - **Sort by Date**: Newest to oldest or oldest to newest
 - **Sort by Filename**: Alphabetical (A-Z or Z-A)
-- **Sort by Size**: Largest to smallest or smallest to largest
+- **Sort by Size**: Largest to smallest or smallest to largest -->
 
 <!-- ### Pagination
 - Control the number of items per page
