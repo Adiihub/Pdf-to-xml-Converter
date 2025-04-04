@@ -186,22 +186,22 @@ The application includes a sophisticated storage management system that:
    - Detailed conversion metadata display
    - Paginated results for improved performance
    - Quick access to past conversions
-  -->
-### Search Filters
+  <!-- -->
+<!-- ### Search Filters
 - **Text Search**: Find conversions by filename or content
 - **Date Range**: Filter conversions by conversion date (from/to)
-- **File Size**: Filter by file size range (min/max)
+- **File Size**: Filter by file size range (min/max) --> -->
 
 ### Sorting Options
 - **Sort by Date**: Newest to oldest or oldest to newest
 - **Sort by Filename**: Alphabetical (A-Z or Z-A)
 - **Sort by Size**: Largest to smallest or smallest to largest
 
-### Pagination
+<!-- ### Pagination
 - Control the number of items per page
 - Navigate through pages of conversion history
 - See total count of matching conversions
- 
+  -->
 
 - **Desktop**: Three-column layout with Upload, Output, and History sections
 - **Mobile**: Single-column layout with tabbed navigation
