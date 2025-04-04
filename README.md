@@ -106,37 +106,12 @@ Before you begin, ensure you have the following:
 └── shared/                 # Shared code between client and server
     └── schema.ts           # Data schemas and types
 ```
-
-## 💾 Database Configuration
-
-The application supports both in-memory storage (for development) and MongoDB (for production):
-
+ 
 ### MongoDB Configuration
 1. Create a MongoDB Atlas account or set up a local MongoDB instance
 2. Add your MongoDB connection string to the `.env` file as `MONGODB_URI`
 3. The application will automatically connect to MongoDB and handle migration
-
-#### Setting Up MongoDB Atlas (Recommended)
-1. Create a free account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)
-2. Create a new cluster (the free tier is sufficient)
-3. In the Security tab, create a database user with read/write permissions
-4. In the Network Access tab, add your IP address or allow access from anywhere for development
-5. Click "Connect" on your cluster, select "Connect your application"
-6. Copy the connection string and replace `<password>` with your database user's password
-7. Add this connection string to your `.env` file as `MONGODB_URI`
-
-#### Storage Failover System
-The application includes an automatic storage failover system:
-- The system will attempt to connect to MongoDB on startup
-- If MongoDB is unavailable, it will automatically use in-memory storage
-- It periodically checks MongoDB connection status (every 30 seconds)
-- When MongoDB becomes available, it automatically switches to MongoDB storage
-- Any data created during the MongoDB outage will be migrated to MongoDB when connection is restored
-
-## 🔐 Authentication System
-
-The application implements a secure authentication system with the following features:
-
+   
 ### User Registration Requirements
 - Email validation with proper format checking
 - Password requirements:
@@ -151,14 +126,14 @@ The application implements a secure authentication system with the following fea
 - Protected routes that require authentication
 - Automatic token refresh
 - Session management with secure HTTP-only cookies
-
+<!-- 
 ### Authentication Flow
 1. User registers with email and password
 2. Password is validated against security requirements
 3. Password is hashed before storage in the database
 4. On login, credentials are verified and a JWT token is issued
 5. Token is stored in an HTTP-only cookie for security
-6. Protected API routes validate the token before allowing access
+6. Protected API routes validate the token before allowing access -->
 
 ## 🚀 API Endpoints
 
@@ -181,10 +156,7 @@ The application includes a sophisticated storage management system that:
 2. Gracefully falls back to in-memory storage when MongoDB is unavailable
 3. Periodically checks MongoDB connection status and switches storage implementations as needed
 4. Migrates data from in-memory to MongoDB when connection is established
-
-## 🧩 Key Components
-
-The application is built with a modular architecture with several key components:
+ 
 
 ### Core Functionality
 
@@ -219,18 +191,7 @@ The application is built with a modular architecture with several key components
    - Detailed conversion metadata display
    - Paginated results for improved performance
    - Quick access to past conversions
-
-## 🎨 Themes
-
-The application supports both light and dark themes:
-
-- **Dark Mode**: Rich purple palette (#2E073F, #7A1CAC, #AD49E1, #EBD3F8)
-- **Light Mode**: Soft pastel palette (#8F87F1, #C68EFD, #E9A5F1, #FED2E2)
-
-## 🔍 Advanced Filtering
-
-The application provides comprehensive filtering capabilities for the conversion history:
-
+ 
 ### Search Filters
 - **Text Search**: Find conversions by filename or content
 - **Date Range**: Filter conversions by conversion date (from/to)
@@ -245,10 +206,7 @@ The application provides comprehensive filtering capabilities for the conversion
 - Control the number of items per page
 - Navigate through pages of conversion history
 - See total count of matching conversions
-
-## 📱 Responsive Design
-
-The UI adapts to different screen sizes:
+ 
 
 - **Desktop**: Three-column layout with Upload, Output, and History sections
 - **Mobile**: Single-column layout with tabbed navigation
@@ -266,7 +224,4 @@ The UI adapts to different screen sizes:
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📞 Support
-
-If you encounter any problems or have any questions, please open an issue on the [GitHub repository](https://github.com/VedantBin/pdf-to-xml-converter/issues).
+ 
