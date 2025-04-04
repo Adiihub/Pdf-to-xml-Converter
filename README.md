@@ -25,11 +25,6 @@ The PDF to XML Converter is designed to provide seamless document transformation
    - Advanced filtering and sorting capabilities
    - Detailed view of conversion results with export options
 
-4. **Responsive UI Experience**
-   - Optimized layouts for desktop, tablet, and mobile devices
-   - Smooth transitions between different screen sizes
-   - Thoughtfully designed for maximum usability
-
 5. **Theme Customization**
    - Built-in dark and light themes with custom color palettes
    - Automatic theme detection based on system preferences
